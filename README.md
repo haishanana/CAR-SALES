@@ -11,3 +11,14 @@ The analysis focuses on the car sales dataset, providing critical insights into 
 |C_CND_000003 | 1/2/2022 | Gianna | Male | 1035000 | Capitol KIA | Cadillac | Eldorado | Overhead Camshaft | Manual | Red | 31500 | 38701-8047 | Passenger | 7298798 | Greenville|
 |C_CND_000004 | 1/2/2022 | Giselle | Male | 13500 | Chrysler of Tri-Cities | Toyota | Celica | Overhead Camshaft | Manual | Pale White | 14000 | 99301-3882 | SUV | 6257557 | Pasco|
 |C_CND_000005 | 1/2/2022 | Grace | Male | 1465000 | Chrysler Plymouth | Acura | TL | DoubleÂ Overhead Camshaft | Auto | Red | 24500 | 53546-9427 | Hatchback | 7081483 | Janesville|
+
+## Data Insight
+- Gender Representation: Male customers account for the highest car purchases, contributing significantly to overall revenue generation in the dataset.
+
+- Top Sales Regions: Sales are distributed across multiple regions like Middletown, Aurora, Greenville, Pasco, and Janesville, Austin.
+
+- Income Levels: Annual incomes range from $10,080 to $11,2000,000, showing a vast range in customer profiles. This could indicate different pricing strategies or product preferences within these income brackets.
+
+- Price Range: Vehicle prices range from $1,200 to $85,800 , offering insights into the affordability and market segmentation of the vehicles sold.
+
+- Color Trends: Pale White  dominate the dataset, showing potential customer color preferences.
