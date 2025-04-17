@@ -15,7 +15,7 @@ The analysis focuses on the car sales dataset, providing critical insights into 
 ## Data Insight
 - Gender Representation: Male customers account for the highest car purchases, contributing significantly to overall revenue generation in the dataset.
 
-- Top Sales Regions: Sales are distributed across multiple regions like Middletown, Aurora, Greenville, Pasco, and Janesville, Austin.
+- Top Sales Regions: Sales are distributed across multiple regions like Middletown, Aurora, Greenville, Pasco, Janesville and Austin.
 
 - Income Levels: Annual incomes range from $10,080 to $11,2000,000, showing a vast range in customer profiles. This could indicate different pricing strategies or product preferences within these income brackets.
 
