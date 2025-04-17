@@ -88,3 +88,10 @@ FROM [dbo].[car_data_usa 2];
 
 ![car excel](https://github.com/user-attachments/assets/61d1e949-e2c7-4085-a903-f01095359060)
 
+### Powerbi Dashboard
+
+![car drop](https://github.com/user-attachments/assets/c6179634-1842-4734-9c45-26ec844fcec0)
+
+![car drop 2](https://github.com/user-attachments/assets/9b153149-445e-4640-a764-cb648f22ec6e)
+
+
