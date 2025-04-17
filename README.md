@@ -13,12 +13,78 @@ The analysis focuses on the car sales dataset, providing critical insights into 
 |C_CND_000005 | 1/2/2022 | Grace | Male | 1465000 | Chrysler Plymouth | Acura | TL | DoubleÂ Overhead Camshaft | Auto | Red | 24500 | 53546-9427 | Hatchback | 7081483 | Janesville|
 
 ## Data Insight
-- Gender Representation: Male customers account for the highest car purchases, contributing significantly to overall revenue generation in the dataset.
+> Gender Representation: Male customers account for the highest car purchases, contributing significantly to overall revenue generation in the dataset.
 
-- Top Sales Regions: Sales are distributed across multiple regions like Middletown, Aurora, Greenville, Pasco, Janesville and Austin.
+> Top Sales Regions: Sales are distributed across multiple regions like Middletown, Aurora, Greenville, Pasco, Janesville and Austin.
 
-- Income Levels: Annual incomes range from $10,080 to $11,2000,000, showing a vast range in customer profiles. This could indicate different pricing strategies or product preferences within these income brackets.
+> Income Levels: Annual incomes range from $10,080 to $11,2000,000, showing a vast range in customer profiles. This could indicate different pricing strategies or product preferences within these income brackets.
 
-- Price Range: Vehicle prices range from $1,200 to $85,800 , offering insights into the affordability and market segmentation of the vehicles sold.
+> Price Range: Vehicle prices range from $1,200 to $85,800 , offering insights into the affordability and market segmentation of the vehicles sold.
 
-- Color Trends: Pale White  dominate the dataset, showing potential customer color preferences.
+> Color Trends: Pale White  dominate the dataset, showing potential customer color preferences.
+
+## SQL QUERIES 
+```SQL
+create database car;
+use car;
+
+select * from [dbo].[car_data_usa 2];
+---Questions
+/*1. Retrieve all the car details from the dataset.
+
+2. Fetch the names of all customers who purchased cars.
+
+3. Get a list of distinct car companies available in the dataset.
+
+Filtering Data:
+
+4. Retrieve all car records where the price is greater than $400,000.
+
+5. Fetch details of cars sold in the "Austin" region.
+
+6. List all cars with a specific transmission type (e.g., "Automatic").
+
+Aggregation and Grouping:
+
+7. Find the average price of cars sold by each company.
+
+8. Get the total sales revenue generated in each dealer region.
+
+9. Count the number of cars sold by gender.*/
+
+--1.
+select * from [dbo].[car_data_usa 2];
+--2.
+select customer_name from [dbo].[car_data_usa 2];
+--3.
+select distinct Company from [dbo].[car_data_usa 2];
+--4.
+select * from [dbo].[car_data_usa 2]
+where price >400000;
+--5.
+select * from [dbo].[car_data_usa 2]
+where Dealer_REGION = 'Austin';
+--6.
+select * from [dbo].[car_data_usa 2]
+where Transmission='auto';
+--7.
+select AVG(price) as Average_price,Company from [dbo].[car_data_usa 2]
+group by company;
+--8.
+SELECT SUM(CAST(COALESCE(annual_income, 0) AS BIGINT)) as Total_revenue , Dealer_Region
+FROM [dbo].[car_data_usa 2]
+group by Dealer_Region;
+
+--9.
+select COUNT(CAR_ID) as Total_CAR ,Gender from [dbo].[car_data_usa 2]
+group by Gender;
+
+SELECT SUM(cast(annual_income AS BIGINT))
+FROM [dbo].[car_data_usa 2];
+```
+
+## Visualization
+### Excel Dashbord
+
+![car excel](https://github.com/user-attachments/assets/61d1e949-e2c7-4085-a903-f01095359060)
+
